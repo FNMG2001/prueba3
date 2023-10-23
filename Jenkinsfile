@@ -31,5 +31,11 @@ pipeline {
             }
         }
         
+        stage('Docker logout'){
+            steps{
+                sh "docker logout"
+            }
+        }
+        
     }
 }
